@@ -1,0 +1,122 @@
+/* nav,li{
+    color: purple;
+} */
+body{
+    /* background-color: aqua; */
+    /* background-image: url('/img/bgt.png');
+    background-repeat: no-repeat;
+    background-position:top middle;
+    background-attachment: fixed; */
+
+    /* equivalent in one line */
+    background: #e0e0d3 url('/img/bgt.png') no-repeat fixed right top;
+} 
+.nav{
+    background: #363633;
+    /* list-style-type: square;  */
+}
+.items{
+    background: #9b9db6;
+    margin:0;
+    height: 74px;
+    list-style-type: square; 
+    padding-top: 50px;
+    width:50%;
+}
+.item{
+    /* background: #d425a0; */
+    display: inline;
+}
+.class{
+    /* border-style: solid;
+    border-width: 0.0001px;
+    border-color: black;
+    border-top-style:dashed; */
+    border: 5px solid green;
+    border-radius: 18px;
+    /* margin for getting space from top right etc */
+    /* margin-top: 84px;
+    margin-left: 94px;
+    margin-right: 94px;
+     */
+    /* margin:23px 67px 56px 0; */
+    /* top right bottom left */
+    /* margin:auto; */
+    /* margin:inherit; */
+    /* inherited margin of class i.e body that is 0px */
+    margin:50px;
+    padding:50px;  /* margin inside the class */
+    width: 50%;
+    height:455px;
+    outline:4px  solid black;
+    color:blue;
+    text-align: center;
+    /* word-spacing: ;
+    text-shadow: ;
+    direction: ; */
+    font-family: sans-serif ;
+    font-style: italic;
+    /* font-size: 20px; */
+    /* font-size: 1.4em; */
+    font-size:1.4vm; /* 1.4 of view ,responsiveness*/
+}
+.class a{
+    text-decoration: none;/* linethrough,overline */
+    /* for no under in google in class we created this css */
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+a:hover{
+    background-color: #2ec4df;
+    color: rgb(219, 212, 212);
+    font-size: 1.5em;
+}
+a:active{
+    font-size: 1.5em;
+}
+/* .class2{
+    visibility: hidden; hide but still remains space
+    display: none; hides and space also removed
+} */
+.container{
+    width:100%;
+    height:70px;
+    padding: 5px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+.first{
+    background: red;
+    height: 45px;
+    width: 30%;
+    display: inline-block;
+    float: right;
+}
+.second{
+    background: blue;
+    height: 45px;
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+.myflex{
+    background: #2ec4df;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* responsiveness */
+    justify-content: center;
+    height: 200px;
+    align-items:center ;
+}
+.myflex > div{
+    background: red;
+    width: 80px;
+    height: 80px;
+    font-size: 25px;
+    margin: 8px;
+}
